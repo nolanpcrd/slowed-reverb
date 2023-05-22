@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    background-color: #7d3683;
+    position: fixed;
+}
+
+.btn {
+    position: fixed;
+    z-index: 1;
+    margin-top: 92.5vh;
+    margin-left: 20px;
+    width: 3%;
+}
+
+.logo {
+    position: fixed;
+    margin-top: 40px;
+    width: 30%;
+    margin-left: 35vw;
+}
+
+.settings {
+    position: fixed;
+    margin-top: 25vh;
+}
+
+.customFileInput {
+    margin-top: -35px;
+    position: fixed;
+    width: 60vw;
+    height: 330px;
+    margin-left: 5vw;
+    background: transparent;
+    border: 3px dashed #730d77;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.customFileInput span {
+    position: absolute;
+    color: #000;
+    font-size: 1.5em;
+    margin-top: 130px;
+    margin-left: 330px;
+}
+
+.customFileInput input[type="file"] {
+    display: none;
+}
+
+.settingsContainer {
+    margin-top: -35px;
+    position: fixed;
+    width: 25vw;
+    height: 330px;
+    margin-left: 70vw;
+    border-radius: 10px;
+    border: 3px dashed #730d77;
+}
+
+.setting {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=range] {
+    height: 26px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 70%;
+    background: transparent;
+    border-radius: 10px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 13px;
+    cursor: pointer;
+    background: #730d77;
+    border-radius: 25px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 20px;
+    width: 30px;
+    border-radius: 7px;
+    background: #3a2a3c;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #730d77;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 13px;
+    cursor: pointer;
+    background: #730d77;
+    border-radius: 25px;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 20px;
+    width: 39px;
+    border-radius: 7px;
+    background: #3a2a3c;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 13px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-upper, input[type=range]::-ms-fill-lower {
+    background: #730d77;
+    border-radius: 50px;
+}
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    height: 20px;
+    width: 39px;
+    border-radius: 7px;
+    background: #3a2a3c;
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower, input[type=range]:focus::-ms-fill-upper {
+    background: #730d77;
+}
+
+#start, #download {
+    transition-duration: 0.3s;
+    font-family: 'Oxygen', sans-serif;
+    position: fixed;
+    background-color: #7a3580;
+    border: #541759 solid 2px;
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+    margin-top: 545px;
+    font-size: 1em;
+}
+
+#start {
+    margin-left: 20vw;
+}
+
+#download {
+    margin-left: 53vw;
+}
+
+#start:hover, #download:hover {
+    transition-duration: 0.3s;
+    filter: brightness(1.05);
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to top, #741d7c, #7d3683);
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 10px;
+}
+
+.footer p {
+    margin: 38px;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1920px) {
+
+    .btn {
+        margin-top: 1012px;
+    }
+
+    .logo {
+        width: 35%;
+        margin-top: 50px;
+        margin-left: 624px;
+    }
+
+    .customFileInput, .settingsContainer {
+        height: 40vh;
+        font-size: 1.5em;
+        border: 4px dashed #730d77;
+    }
+
+    .customFileInput span {
+        margin-top: 17vh;
+        margin-left: 22vw;
+    }
+
+    .setting {
+        margin-top: 90px;
+    }
+
+    #start, #download {
+        margin-top: 800px;
+        font-size: 1.5em;
+        height: 150px;
+        width: 500px;
+    }
+
+    #start {
+        margin-left: 20vw;
+    }
+
+    #download {
+        margin-left: 54vw;
+    }
+
+    .footer {
+        height: 100px;
+        font-size: 1.5em;
+    }
+
+    .footer p {
+        margin: 47px;
+    }
+}

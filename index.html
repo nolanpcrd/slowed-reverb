@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S+R ENGINE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <img alt="git" class="btn" src="img/github.png" onclick="window.location.href='https://github.com/nolanpcrd'">
+        <img src="img/logo.png" alt="logo" class="logo">
+    </div>
+    <div class="settings">
+        <label for="fileInput" class="customFileInput">
+            <span>Select an mp3 file</span>
+            <input type="file" id="fileInput" accept="audio/mp3">
+        </label>
+        <div class="settingsContainer">
+            <div class="setting">
+                <label for="slow" class="text">SLOW</label>
+                <input type="range" id="slow" min="0" max="100" value="50">
+            </div>
+            <div class="setting">
+                <label for="reverb" class="text">REVERB</label>
+                <input type="range" id="reverb" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="start">START</button>
+        <button id="download">DOWNLOAD</button>
+    </div>
+    <div class="footer">
+        <p>© 2023 S+R ENGINE</p>
+    </div>
+</body>
+<script src="ffmpeg-core.js"></script>
+<script src="script.js"></script>
+</html>
